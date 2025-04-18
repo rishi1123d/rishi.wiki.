@@ -1,0 +1,139 @@
+/* Base styles and variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --secondary-text: #333333;
+  --section-spacing: 1.5rem;
+  --container-width: 90vw;
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.container {
+  width: var(--container-width);
+  max-width: 650px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* Typography */
+h1, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: opacity var(--transition-speed);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Header */
+header {
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 0.75rem;
+}
+
+.indent {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.email {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+  .container {
+    width: 85vw;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    width: 90vw;
+    padding: 1rem 0;
+  }
+}
