@@ -168,14 +168,26 @@ p {
 /* Links */
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
   color: var(--link-visited);
+  text-decoration: underline;
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+/* Nav Links Exception */
+.nav-tabs a, 
+.user-tools a {
+  text-decoration: none;
+}
+
+.nav-tabs a:hover, 
+.user-tools a:hover {
   text-decoration: underline;
 }
 
