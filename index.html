@@ -51,7 +51,15 @@
                 <div class="title-area">
                     <h1>Rishi Kanaparti</h1>
                     <div class="language-selector">
-                        <a href="#">150 languages</a>
+                        <a href="#" onclick="toggleLanguageMenu(event)">150 languages</a>
+                        <div id="language-menu" class="language-menu">
+                            <div class="language-search">
+                                <input type="text" placeholder="Search language" onkeyup="filterLanguages(this.value)">
+                            </div>
+                            <div class="language-list">
+                                <!-- Languages will be populated by JavaScript -->
+                            </div>
+                        </div>
                     </div>
                 </div>
 
