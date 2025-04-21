@@ -156,29 +156,6 @@ function changeLanguage(langCode) {
     lookingAt[1].textContent = translation.interests2;
     lookingAt[2].textContent = translation.interests3;
 
-    // Update info box content
-    const infoLabels = document.querySelectorAll('.info-label');
-    infoLabels.forEach(label => {
-        const key = label.textContent.toLowerCase().replace(' ', '_');
-        if (translation[key]) {
-            label.textContent = translation[key];
-        }
-    });
-
-    // Update info box values
-    const infoRows = document.querySelectorAll('.info-row');
-    infoRows.forEach(row => {
-        const label = row.querySelector('.info-label').textContent.toLowerCase().replace(' ', '_');
-        const value = row.querySelector('span:last-child');
-        if (label === 'education') {
-            value.textContent = translation.high_school;
-        } else if (label === 'occupation') {
-            value.textContent = translation.entrepreneur;
-        } else if (label === 'known_for') {
-            value.textContent = translation.known_fields;
-        }
-    });
-
     // Close the language menu
     document.getElementById('language-menu').classList.remove('show');
 }
@@ -214,9 +191,12 @@ const translations = {
         'education': 'Education',
         'occupation': 'Occupation',
         'known_for': 'Known for',
-        'high_school': 'High school',
-        'entrepreneur': 'Entrepreneur, Researcher',
-        'known_fields': 'AI, Blockchain Technology'
+        'high_school': 'Apex Friendship High School',
+        'entrepreneur': 'Entrepreneur',
+        'known_fields': 'AI, Blockchain',
+        'location': 'Atlanta, GA',
+        'birth': 'April 2004',
+        'birth_place': 'Morrisville, NC'
     },
     'es': {
         'title': 'Rishi Kanaparti',
