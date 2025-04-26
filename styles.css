@@ -259,7 +259,10 @@ a:hover {
   }
 
   .sidebar {
-    display: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    order: 2;
   }
 
   .info-box {
@@ -288,6 +291,12 @@ a:hover {
 
   .main-content {
     padding: 1rem;
+    order: 1;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
