@@ -132,7 +132,7 @@ function changeLanguage(langCode) {
     currentParagraphs[0].textContent = translation.building;
     currentParagraphs[1].innerHTML = `${translation.ai_work} <a href="https://recallrai.com/" target="_blank">RecallRAI</a>`;
     currentParagraphs[2].innerHTML = `${translation.college_dao} <a href="https://collegedao.io/" target="_blank">collegedao</a>`;
-    currentParagraphs[3].textContent = translation.conference;
+    currentParagraphs[3].innerHTML = `${translation.conference} <a href="https://www.midwestblockchain.org/" target="_blank">midwestblockchain.org</a>`;
 
     // Update previous work section
     const previousWork = document.querySelector('#previous');
@@ -170,7 +170,7 @@ const translations = {
         'building': 'building & shipping cool stuff',
         'ai_work': 'working on solving ai hallucinations at',
         'college_dao': 'leading research development and liquid fund at',
-        'conference': 'working on organizing the biggest student blockchain conference of the year in december',
+        'conference': 'working on organizing MBC 2025, the biggest student blockchain conference with 700+ students from 50+ universities',
         'previous_work': 'Previous Work',
         'stride_founder': 'co founder @',
         'stride_desc1': 'made custom orthothic insoles in one click instead of taking up to 4 hours per insole design',
@@ -206,7 +206,7 @@ const translations = {
         'building': 'construyendo y lanzando cosas increíbles',
         'ai_work': 'trabajando en resolver alucinaciones de IA en RecallRAI',
         'college_dao': 'dirigiendo el desarrollo de investigación y fondo líquido en collegedao',
-        'conference': 'organizando la conferencia de blockchain estudiantil más grande del año en diciembre',
+        'conference': 'organizando MBC 2025, la conferencia de blockchain estudiantil más grande con 700+ estudiantes de 50+ universidades',
         'previous_work': 'Trabajo Anterior',
         'stride_founder': 'cofundador @ stride labs',
         'stride_desc1': 'creación de plantillas ortopédicas personalizadas con un clic en lugar de tomar hasta 4 horas por diseño',
@@ -239,7 +239,7 @@ const translations = {
         'building': 'construction et lancement de projets cool',
         'ai_work': 'travaille sur la résolution des hallucinations d\'IA chez RecallRAI',
         'college_dao': 'direction du développement de la recherche et du fonds liquide chez collegedao',
-        'conference': 'organisation de la plus grande conférence étudiante sur la blockchain de l\'année en décembre',
+        'conference': 'organisation de MBC 2025, la plus grande conférence étudiante sur la blockchain avec 700+ étudiants de 50+ universités',
         'previous_work': 'Expérience Précédente',
         'stride_founder': 'co-fondateur @ stride labs',
         'stride_desc1': 'création de semelles orthopédiques personnalisées en un clic au lieu de prendre jusqu\'à 4 heures par conception',
@@ -272,7 +272,7 @@ const translations = {
         'building': 'baue und liefere coole Sachen',
         'ai_work': 'arbeite an der Lösung von KI-Halluzinationen bei RecallRAI',
         'college_dao': 'leite Forschungsentwicklung und Liquid Fund bei collegedao',
-        'conference': 'organisiere die größte studentische Blockchain-Konferenz des Jahres im Dezember',
+        'conference': 'organisiere MBC 2025, die größte studentische Blockchain-Konferenz mit 700+ Studenten aus 50+ Universitäten',
         'previous_work': 'Frühere Arbeit',
         'stride_founder': 'Mitgründer @ stride labs',
         'stride_desc1': 'Erstellung maßgeschneiderter orthopädischer Einlagen mit einem Klick statt bis zu 4 Stunden pro Design',
@@ -305,7 +305,7 @@ const translations = {
         'building': 'कूल चीजें बना और लॉन्च कर रहा हूं',
         'ai_work': 'RecallRAI में AI हैलुसिनेशन्स को सुलझाने पर काम कर रहा हूं',
         'college_dao': 'collegedao में रिसर्च डेवलपमेंट और लिक्विड फंड का नेतृत्व कर रहा हूं',
-        'conference': 'दिसंबर में साल की सबसे बड़ी स्टूडेंट ब्लॉकचेन कॉन्फ्रेंस का आयोजन कर रहा हूं',
+        'conference': 'MBC 2025 का आयोजन कर रहा हूं, 50+ विश्वविद्यालयों के 700+ छात्रों के साथ साल की सबसे बड़ी छात्र ब्लॉकचेन कॉन्फ्रेंस',
         'previous_work': 'पिछला काम',
         'stride_founder': 'सह-संस्थापक @ stride labs',
         'stride_desc1': 'कस्टम ऑर्थोटिक इनसोल को एक क्लिक में बनाना जो पहले 4 घंटे तक लेता था',
@@ -338,7 +338,7 @@ const translations = {
         'building': '构建和发布很酷的东西',
         'ai_work': '在 RecallRAI 解决 AI 幻觉问题',
         'college_dao': '在 collegedao 领导研究开发和流动基金',
-        'conference': '组织今年十二月最大的学生区块链会议',
+        'conference': '正在组织 MBC 2025，这是最大的学生区块链会议，有来自 50 多所大学的 700 多名学生',
         'previous_work': '以往工作',
         'stride_founder': '联合创始人 @ stride labs',
         'stride_desc1': '一键制作定制矫形鞋垫，而不是每个设计需要4小时',
@@ -371,7 +371,7 @@ const translations = {
         'building': '構建和發布很酷的東西',
         'ai_work': '在 RecallRAI 解決 AI 幻覺問題',
         'college_dao': '在 collegedao 領導研究開發和流動基金',
-        'conference': '組織今年十二月最大的學生區塊鏈會議',
+        'conference': '正在組織 MBC 2025，這是最大的學生區塊鏈會議，有來自 50 多所大學的 700 多名學生',
         'previous_work': '以往工作',
         'stride_founder': '聯合創始人 @ stride labs',
         'stride_desc1': '一鍵製作定制矯正鞋墊，而不是每個設計需要4小時',
@@ -404,7 +404,7 @@ const translations = {
         'building': 'بناء وإطلاق أشياء رائعة',
         'ai_work': 'العمل على حل هلوسات الذكاء الاصطناعي في RecallRAI',
         'college_dao': 'قيادة تطوير البحث والصندوق السائل في collegedao',
-        'conference': 'تنظيم أكبر مؤتمر طلابي للبلوكتشين هذا العام في ديسمبر',
+        'conference': 'تنظيم MBC 2025، أكبر مؤتمر طلابي للبلوكتشين مع أكثر من 700 طالب من أكثر من 50 جامعة',
         'previous_work': 'العمل السابق',
         'stride_founder': 'المؤسس المشارك @ stride labs',
         'stride_desc1': 'صنع نعال تقويمية مخصصة بنقرة واحدة بدلاً من استغراق ما يصل إلى 4 ساعات لكل تصميم',
@@ -437,7 +437,7 @@ const translations = {
         'building': '멋진 것들을 만들고 배포합니다',
         'ai_work': 'RecallRAI에서 AI 환각 현상을 해결하는 작업 중',
         'college_dao': 'collegedao에서 연구 개발과 유동 자금을 이끌고 있습니다',
-        'conference': '12월에 올해 최대의 학생 블록체인 컨퍼런스를 조직 중',
+        'conference': '50개 이상의 대학에서 700명 이상의 학생이 참가하는 최대 학생 블록체인 컨퍼런스인 MBC 2025를 조직 중',
         'previous_work': '이전 작업',
         'stride_founder': '공동 창립자 @ stride labs',
         'stride_desc1': '한 번의 클릭으로 맞춤형 정형 깔창을 제작 (이전에는 디자인당 최대 4시간 소요)',
@@ -470,7 +470,7 @@ const translations = {
         'building': 'クールなものを構築・リリースしています',
         'ai_work': 'RecallRAIでAIの幻覚問題の解決に取り組んでいます',
         'college_dao': 'collegedaoで研究開発と流動資金をリードしています',
-        'conference': '12月に今年最大の学生ブロックチェーンカンファレンスを主催しています',
+        'conference': '50以上の大学から700人以上の学生が参加する最大の学生ブロックチェーンカンファレンスであるMBC 2025を主催しています',
         'previous_work': '以前の仕事',
         'stride_founder': '共同創業者 @ stride labs',
         'stride_desc1': 'カスタム矯正インソールを1クリックで作成（以前はデザインごとに最大4時間かかっていました）',
