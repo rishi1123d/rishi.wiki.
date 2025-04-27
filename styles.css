@@ -360,3 +360,15 @@ a:hover {
 .language-item:hover {
     background: var(--nav-bg);
 }
+
+/* Awards Section */
+.awards-list {
+  list-style-type: disc;
+  margin-left: 1.6em;
+  margin-bottom: 1em;
+}
+
+.awards-list li {
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}
